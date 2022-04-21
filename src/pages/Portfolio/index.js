@@ -13,7 +13,6 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 function Portfolio() {
     return (
-        <div>
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                 <Grid item xs>
@@ -30,7 +29,6 @@ function Portfolio() {
                 </Grid>
                 </Grid>
             </Container>
-        </div>
     )
 }
 
