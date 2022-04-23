@@ -11,7 +11,8 @@ const Item = styled(Paper)(({ theme }) => ({
   textAlign: 'center',
   height: '300px'
 }));
-function Portfolio() {
+
+export default function Portfolio() {
     return (
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
@@ -31,6 +32,4 @@ function Portfolio() {
             </Container>
     )
 }
-
-export default Portfolio;
 

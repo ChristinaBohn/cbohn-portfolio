@@ -1,35 +1,39 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
+import photo from '../AboutMe/images/cbohn-profile-image.jpeg'
 
-const bull = (
-  <Box
-    component="span"
-    sx={{ display: 'inline-block', mx: '2px', transform: 'scale(0.8)' }}
-  >
-    •
-  </Box>
-);
+// MUI Imports
 
-export default function BasicCard() {
+import { 
+  Container,
+  Grid,
+  Paper,
+  Typography
+} from '@mui/material';
+
+
+export default function AboutMe() {
   return (
-    <Card sx={{ minWidth: 275 }}>
-      <CardContent>
-        <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-          Bio
-        </Typography>
-        <Typography variant="h5" component="div">
-          Header Tagline
-        </Typography>
-        <Typography sx={{ mb: 1.5 }} color="text.secondary">
-          lorem ipsum
-        </Typography>
-        <Typography variant="body2">
-          Bio text
-        </Typography>
-      </CardContent>
-    </Card>
+
+    <Container>
+      <Grid>
+
+        <Paper elevation={16} square>
+          <Typography sx={{m: 5, p: 6}}>
+          Full Stack Web Developer with growing skills in HTML, CSS, Javascript, jQuery, Bootstrap, the MERN stack, and responsive web design. I am currently working towards a certificate in Full Stack Web Development from the University of Washington, to be completed in April 2022.
+          <br/>
+          I enjoy connecting the analytical and problem-solving skills I developed as an environmental scientist with a love for design, to write code that creates beautiful, seamless solutions for web users.
+          </Typography>
+        </Paper>
+
+        {/* Profile Image */}
+        <img
+          src={photo}
+          alt="Portrait of Christina Bohn"
+          height={200}
+        />
+
+      </Grid>
+    </Container>
+
   );
 }
