@@ -7,7 +7,7 @@ import AboutMe from './pages/AboutMe';
 import Footer from './components/Footer';
 
 function App() {
-const pages = ['About', 'Portfolio', 'Contact', 'Resumé'];
+const pages = ['About Me', 'Portfolio', 'Contact', 'Resumé'];
 const [currentPage, setCurrentPage] = useState(pages[0])
   
 
@@ -20,7 +20,7 @@ const [currentPage, setCurrentPage] = useState(pages[0])
         currentPage={currentPage}
         setCurrentPage={setCurrentPage} />
         <Routes>
-          <Route exact path = '/About' element={<AboutMe/>} />
+          <Route exact path = '/AboutMe' element={<AboutMe/>} />
           <Route exact path = '/Portfolio' element={<Portfolio/>} />
         </Routes>
         <Footer/>

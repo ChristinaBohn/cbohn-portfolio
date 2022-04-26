@@ -17,16 +17,19 @@ export default function Portfolio() {
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
                 <Grid item xs>
-                    <div style={{height: "300px"}}>
+                    <Paper style={{height: "300px"}} elevation={16}>
                         <img src={dailyPlanner} height="300px"></img>
-                    </div>
-                    <Item>xs</Item>
-                </Grid>
-                <Grid item xs={6}>
-                    <Item>xs=6</Item>
+                    </Paper>
                 </Grid>
                 <Grid item xs>
-                    <Item>xs</Item>
+                    <Paper style={{height: "300px"}} elevation={16}>
+                        <img src={dailyPlanner} height="300px"></img>
+                    </Paper>
+                </Grid>
+                <Grid item xs>
+                    <Paper style={{height: "300px"}} elevation={16}>
+                        <img src={dailyPlanner} height="300px"></img>
+                    </Paper>
                 </Grid>
                 </Grid>
             </Container>
