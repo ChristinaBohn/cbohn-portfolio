@@ -17,6 +17,8 @@ export default function AboutMe() {
     <Container>
       <Grid>
 
+        <Typography variant='h1'>About Christina</Typography>
+
         <Paper elevation={16} square>
           <Typography sx={{m: 5, p: 6}}>
           Full Stack Web Developer with growing skills in HTML, CSS, Javascript, jQuery, Bootstrap, the MERN stack, and responsive web design. I am currently working towards a certificate in Full Stack Web Development from the University of Washington, to be completed in April 2022.

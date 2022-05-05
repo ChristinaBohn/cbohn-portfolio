@@ -1,5 +1,5 @@
 import React from 'react';
-import {Container, Grid} from '@mui/material';
+import {Container, Grid, Typography} from '@mui/material';
 import { styled } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
@@ -16,21 +16,25 @@ export default function Portfolio() {
     return (
             <Container maxWidth="lg">
                 <Grid container spacing={3}>
-                <Grid item xs>
-                    <Paper style={{height: "300px"}} elevation={16}>
-                        <img src={dailyPlanner} height="300px"></img>
-                    </Paper>
-                </Grid>
-                <Grid item xs>
-                    <Paper style={{height: "300px"}} elevation={16}>
-                        <img src={dailyPlanner} height="300px"></img>
-                    </Paper>
-                </Grid>
-                <Grid item xs>
-                    <Paper style={{height: "300px"}} elevation={16}>
-                        <img src={dailyPlanner} height="300px"></img>
-                    </Paper>
-                </Grid>
+
+                    <Typography variant='h1'>My Projects</Typography>
+
+                    <Grid item xs>
+                        <Paper style={{height: "300px"}} elevation={16}>
+                            <img src={dailyPlanner} height="300px"></img>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs>
+                        <Paper style={{height: "300px"}} elevation={16}>
+                            <img src={dailyPlanner} height="300px"></img>
+                        </Paper>
+                    </Grid>
+                    <Grid item xs>
+                        <Paper style={{height: "300px"}} elevation={16}>
+                            <img src={dailyPlanner} height="300px"></img>
+                        </Paper>
+                    </Grid>
+
                 </Grid>
             </Container>
     )
