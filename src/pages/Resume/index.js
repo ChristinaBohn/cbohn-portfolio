@@ -1,17 +1,14 @@
-// TODO: Add icons for technologies and download resume button
-
 import * as React from 'react';
 
 // MUI Imports
-
 import { 
   Container,
   Paper,
   Typography
 } from '@mui/material';
 
-
-export default function Resume() {
+// Resume Download & Technology Icons
+export default function Resumé() {
   return (
 
     <Container>
@@ -20,7 +17,7 @@ export default function Resume() {
 
         <Paper elevation={16} square>
 
-            {/* DL Resume, Technology icons */}
+            {/* TODO: Add icons for technologies and download resume button */}
 
         </Paper>
 

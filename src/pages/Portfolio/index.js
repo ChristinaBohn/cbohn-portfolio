@@ -1,17 +1,17 @@
 import React from 'react';
-import {Container, Grid, Typography} from '@mui/material';
-import { styled } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
+
+// MUI Imports
+import {
+    Container,
+    Grid,
+    Typography,
+    Paper
+} from '@mui/material';
+
+// Image Imports
 import dailyPlanner from './images/daily-planner-.png';
 
-
-const Item = styled(Paper)(({ theme }) => ({
-  padding: theme.spacing(1),
-  textAlign: 'center',
-  height: '300px'
-}));
-
+// Project Porfolio
 export default function Portfolio() {
     return (
             <Container maxWidth="lg">
@@ -21,17 +21,17 @@ export default function Portfolio() {
 
                     <Grid item xs>
                         <Paper style={{height: "300px"}} elevation={16}>
-                            <img src={dailyPlanner} height="300px"></img>
+                            <img src={dailyPlanner} alt="Daily Planner preview" height="300px"></img>
                         </Paper>
                     </Grid>
                     <Grid item xs>
                         <Paper style={{height: "300px"}} elevation={16}>
-                            <img src={dailyPlanner} height="300px"></img>
+                            <img src={dailyPlanner} alt="Daily Planner preview" height="300px"></img>
                         </Paper>
                     </Grid>
                     <Grid item xs>
                         <Paper style={{height: "300px"}} elevation={16}>
-                            <img src={dailyPlanner} height="300px"></img>
+                            <img src={dailyPlanner} alt="Daily Planner preview" height="300px"></img>
                         </Paper>
                     </Grid>
 

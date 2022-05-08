@@ -5,9 +5,11 @@ import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Portfolio from './pages/Portfolio/index';
 import AboutMe from './pages/AboutMe';
 import Footer from './components/Footer';
+import Contact from './pages/Contact';
+import Resumé from './pages/Resume';
 
 function App() {
-const pages = ['About Me', 'Portfolio', 'Contact', 'Resumé'];
+const pages = ['About', 'Portfolio', 'Contact', 'Resumé'];
 const [currentPage, setCurrentPage] = useState(pages[0])
   
 
@@ -19,11 +21,16 @@ const [currentPage, setCurrentPage] = useState(pages[0])
         pages={pages}
         currentPage={currentPage}
         setCurrentPage={setCurrentPage} />
+
         <Routes>
-          <Route exact path = '/AboutMe' element={<AboutMe/>} />
+          <Route exact path = '/About' element={<AboutMe/>} />
           <Route exact path = '/Portfolio' element={<Portfolio/>} />
+          <Route exact path = '/Contact' element={<Contact/>} />
+          <Route exact path = '/Resumé' element={<Resumé/>} />
         </Routes>
+
         <Footer/>
+
       </div>
     </Router>
   );

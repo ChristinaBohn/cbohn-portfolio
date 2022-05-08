@@ -1,5 +1,3 @@
-// TODO: Add contact form with name, email, message, submit button
-
 import * as React from 'react';
 
 // MUI Imports
@@ -10,7 +8,7 @@ import {
   Typography
 } from '@mui/material';
 
-
+// Contact Form
 export default function Contact() {
   return (
 
@@ -20,7 +18,9 @@ export default function Contact() {
 
         <Paper elevation={16} square>
 
-            {/* Contact Form */}
+          {/* TODO: Add contact form with name, email, message, submit button */}
+
+          <Typography>Coming Soon</Typography>
 
         </Paper>
 
