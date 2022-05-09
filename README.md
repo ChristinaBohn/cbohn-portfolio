@@ -13,4 +13,4 @@ This is my personal portfolio page, built using React and MUI. This page showcas
 ## Links
 
     * GitHub Repo: https://github.com/ChristinaBohn/cbohn-portfolio
-    * Heroku Deployment: 
+    * Heroku Deployment: https://git.heroku.com/cbohn-portfolio.git
