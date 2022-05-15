@@ -24,7 +24,7 @@ export default function Portfolio() {
 
                     <Typography variant='h1'>Collaborations</Typography>
 
-                    <Link underline="none" href='https://myteam-stats.herokuapp.com/'>    
+                    <Link underline="none" href='https://myteam-stats.herokuapp.com/' target="_blank">    
                         <Grid item xs>
                             <Paper style={{height: "300px"}} elevation={16}>
                                 <img src={myTeamStats} alt="My Team Stats preview" height="300px"></img>
@@ -32,7 +32,7 @@ export default function Portfolio() {
                         </Grid>
                     </Link>
 
-                    <Link underline="none" href='https://dogeared-2022.herokuapp.com/login'> 
+                    <Link underline="none" href='https://dogeared-2022.herokuapp.com/login' target="_blank"> 
                         <Grid item xs>
                             <Paper style={{height: "300px"}} elevation={16}>
                                 <img src={dogeared} alt="Dogeared preview" height="300px"></img>
@@ -40,7 +40,7 @@ export default function Portfolio() {
                         </Grid>
                     </Link>
 
-                    <Link underline="none" href='https://mikiwolfe.github.io/30-day-Challenge/'> 
+                    <Link underline="none" href='https://mikiwolfe.github.io/30-day-Challenge/' target="_blank"> 
                         <Grid item xs>
                             <Paper style={{height: "300px"}} elevation={16}>
                                 <img src={selfExploration} alt="40 Day Challenge preview" height="300px"></img>

@@ -11,7 +11,7 @@ import DownloadIcon from '@mui/icons-material/Download';
 
 
 // Resume Download & Technology Icons
-export default function Resumé() {
+export default function Resume() {
   return (
 
     <Container>
@@ -21,8 +21,8 @@ export default function Resumé() {
         <Paper elevation={16} square>
 
             {/* TODO: Add icons for technologies and download resume button */}
-            <Button variant="outlined" startIcon={<DownloadIcon />} href="https://docs.google.com/document/d/1-Ez6R4vPEDNbmoVxvZX2iN5IfzmdmrrESedbttqQDAw/edit" size="large">
-              Resumé
+            <Button variant="outlined" startIcon={<DownloadIcon />} href="https://docs.google.com/document/d/1-Ez6R4vPEDNbmoVxvZX2iN5IfzmdmrrESedbttqQDAw/edit" target="_blank" size="large">
+              Resume
             </Button>
 
         </Paper>
