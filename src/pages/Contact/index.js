@@ -3,8 +3,10 @@ import * as React from 'react';
 // MUI Imports
 
 import { 
+  Button,
   Container,
   Paper,
+  TextField,
   Typography
 } from '@mui/material';
 
@@ -19,8 +21,12 @@ export default function Contact() {
         <Paper elevation={16} square>
 
           {/* TODO: Add contact form with name, email, message, submit button */}
-
-          <Typography>Coming Soon</Typography>
+          <form>
+            <TextField label="Full Name" fullWidth autocomplete="none"/>
+            <TextField label="Email" fullWidth autocomplete="none"/>
+            <TextField label="Message" fullWidth multiline rows={5} autocomplete="none"/>
+            <Button type="submit">Submit</Button>
+          </form>
 
         </Paper>
 
