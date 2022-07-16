@@ -1,14 +1,14 @@
 # Portfolio
 
-This is my personal portfolio page, built using React and MUI. This page showcases my recent projects and includes a Bio and Contact sections.
+Portfolio Page is under construction!
 
 ## Technologies Used
 
+    * HTML
+    * CSS
+    * Javascript
     * React.js
     * Material UI
-    * Javascript
-
-## Preview
 
 ## Links
 
