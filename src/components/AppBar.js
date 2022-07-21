@@ -19,14 +19,14 @@ const ResponsiveAppBar = (props) => {
   const {pages=[], currentPage, setCurrentPage} = props;
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{ bgcolor: '#e6af2e' }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, color: '#393E41', display: { xs: 'none', md: 'flex' } }}
           >
             christina bohn
           </Typography>
@@ -39,7 +39,7 @@ const ResponsiveAppBar = (props) => {
                 key={page}
                 onClick={() => setCurrentPage(page)}
                 href={`/${page}`}
-                sx={{ my: 2, color: 'white', display: 'block' }}
+                sx={{ my: 2, color: '#393e41', display: 'block' }}
               >
                 {page}
               </Button>
