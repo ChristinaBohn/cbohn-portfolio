@@ -12,6 +12,7 @@ import Resume from './pages/Resume';
 
 
 function App() {
+  
 const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
 const [currentPage, setCurrentPage] = useState(pages[0])
   

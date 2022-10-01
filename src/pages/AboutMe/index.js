@@ -17,32 +17,37 @@ export default function AboutMe() {
   return (
 
     <Container>
-      <Grid>
-
-        <Typography variant='h1'>About Christina</Typography>
-
-        <Paper elevation={16} square>
-
-          <Typography sx={{m: 4, pt: 6, color: "darkgray", fontSize: "1.2rem"}}>
-            Seattle, WA
-          </Typography>
-          
-          <Typography sx={{m: 4}}> 
-            Full Stack Web Developer with growing skills in HTML, CSS, Javascript, the MERN stack, and responsive web design. I recently earned a certificate in Full Stack Web Development from the University of Washington.
-          </Typography>
-
-          <Typography sx={{m: 4, pb: 6}}>
-            I enjoy connecting the analytical and problem-solving skills I developed as an environmental scientist with a curiosity for lifelong learning, to write code that creates beautiful, seamless solutions for web users.
-          </Typography>
-        
-        </Paper>
+      <Grid container
+        direction="row"
+        justifyContent="center"
+        alignItems="center">
+        <Typography variant='h1'>christina bohn | web developer</Typography>
 
         {/* Profile Image */}
-        <img
-          src={photo}
-          alt="Portrait of Christina Bohn"
-          height={200}
-        />
+        <Grid item xs={12} md={4}>
+          <img
+            src={photo}
+            alt="Portrait of Christina Bohn"
+            height={200}
+          />
+        </Grid>
+        
+        {/* Bio */}
+        <Grid item xs={12} md={8}>
+          <Paper elevation={16} square>
+            <Typography sx={{m: 4, pt: 6, color: "#393E41", fontSize: "1.2rem"}}>
+              Seattle, WA
+            </Typography>
+            
+            <Typography sx={{m: 4}}> 
+              Curious and creative Full Stack Web Developer, with a certificate in Full Stack Web Development from the University of Washington. Positive and energetic team player, big picture thinker. Comfortable working in the MERN stack.
+            </Typography>
+
+            <Typography sx={{m: 4, pb: 6}}>
+              I enjoy connecting the analytical and problem-solving skills I developed as an environmental scientist with a curiosity for lifelong learning, to write code that creates beautiful, seamless solutions for web users.
+            </Typography>
+          </Paper>
+        </Grid>
 
       </Grid>
     </Container>
