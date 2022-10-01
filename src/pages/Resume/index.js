@@ -26,7 +26,7 @@ export default function Resume() {
 
     <Container>
 
-        <Typography variant='h1'>Christina's technologies</Typography>
+        <Typography variant='h2' sx={{m: 10}}>technologies</Typography>
 
         <Paper elevation={16} square>
 

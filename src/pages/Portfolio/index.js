@@ -20,9 +20,11 @@ export default function Portfolio() {
     return (
             <Container maxWidth="lg">
 
-                <Grid container spacing={3}>
+                <Grid container>
 
-                    <Typography variant='h1'>Collaborations</Typography>
+                    <Grid item md={12} sx={{m: 10}}>
+                        <Typography variant='h2'sx={{m: 10}}>collaborations</Typography>
+                    </Grid>
 
                     <Link underline="none" href='https://myteam-stats.herokuapp.com/' target="_blank">    
                         <Grid item xs>
@@ -54,7 +56,9 @@ export default function Portfolio() {
 
                 <Grid container spacing={3}>
 
-                    <Typography variant='h1'>My Projects</Typography>
+                    <Grid item xs={{m: 10}}>
+                        <Typography variant='h2' sx={{m: 10}}>my projects</Typography>
+                    </Grid>
 
                     <Grid item xs>
                         <Paper style={{height: "300px"}} elevation={16}>

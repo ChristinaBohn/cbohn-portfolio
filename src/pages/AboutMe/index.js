@@ -21,14 +21,15 @@ export default function AboutMe() {
         direction="row"
         justifyContent="center"
         alignItems="center">
-        <Typography variant='h1'>christina bohn | web developer</Typography>
+        <Typography variant='h2' sx={{m: 10}} >christina bohn | web developer</Typography>
 
         {/* Profile Image */}
         <Grid item xs={12} md={4}>
           <img
             src={photo}
             alt="Portrait of Christina Bohn"
-            height={200}
+            height={260}
+            // elevation={16}
           />
         </Grid>
         

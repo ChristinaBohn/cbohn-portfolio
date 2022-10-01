@@ -13,6 +13,7 @@ const footerStyle = {
     bottom: 0,
     textAlign: 'center',
     paddingBottom: 10,
+    color: "darkgray"
 }
 
 

@@ -16,7 +16,7 @@ export default function Contact() {
 
     <Container>
 
-        <Typography variant='h1'>Let's get in touch</Typography>
+        <Typography variant='h2' sx={{m: 10}}>let's get in touch</Typography>
 
         <Paper elevation={16} square>
 
