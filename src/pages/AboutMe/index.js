@@ -35,7 +35,7 @@ export default function AboutMe() {
         
         {/* Bio */}
         <Grid item xs={12} md={8}>
-          <Paper elevation={16} square>
+          <Paper elevation={10} square>
             <Typography sx={{m: 4, pt: 6, color: "#393E41", fontSize: "1.2rem"}}>
               Seattle, WA
             </Typography>
