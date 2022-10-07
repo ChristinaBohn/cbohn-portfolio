@@ -1,7 +1,8 @@
 import * as React from 'react';
 
 // MUI Imports
-import { 
+import {
+  Box,
   Container,
   Grid,
   Paper,
@@ -21,7 +22,17 @@ export default function AboutMe() {
         direction="row"
         justifyContent="center"
         alignItems="center">
-        <Typography variant='h2' sx={{m: 10}} >christina bohn | web developer</Typography>
+
+        {/* Title */}
+        <Box
+          alignItems="center"
+          justify="center"
+          sx={{ display: "flex", gap: "25px", m:10 }}
+        >
+          <Typography variant='h2'>christina bohn</Typography>
+          <Typography variant='h1' sx={{color: '#e6af2e'}}> | </Typography>
+          <Typography variant='h2'>web developer</Typography>
+        </Box>
 
         {/* Profile Image */}
         <Grid item xs={12} md={4}>
@@ -29,13 +40,14 @@ export default function AboutMe() {
             src={photo}
             alt="Portrait of Christina Bohn"
             height={260}
+            // sx={{borderRadius: 10}}
             // elevation={16}
           />
         </Grid>
         
         {/* Bio */}
         <Grid item xs={12} md={8}>
-          <Paper elevation={10} square>
+          <Paper elevation={8} square>
             <Typography sx={{m: 4, pt: 6, color: "#393E41", fontSize: "1.2rem"}}>
               Seattle, WA
             </Typography>
@@ -49,9 +61,7 @@ export default function AboutMe() {
             </Typography>
           </Paper>
         </Grid>
-
       </Grid>
     </Container>
-
   );
 }

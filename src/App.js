@@ -8,12 +8,11 @@ import Footer from './components/Footer';
 import Portfolio from './pages/Portfolio/index';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import Resume from './pages/Resume';
 
 
 function App() {
   
-const pages = ['About', 'Portfolio', 'Contact', 'Resume'];
+const pages = ['About', 'Portfolio', 'Contact'];
 const [currentPage, setCurrentPage] = useState(pages[0])
   
   return (
@@ -31,7 +30,6 @@ const [currentPage, setCurrentPage] = useState(pages[0])
           <Route exact path = '/About' element={<AboutMe/>} />
           <Route exact path = '/Portfolio' element={<Portfolio/>} />
           <Route exact path = '/Contact' element={<Contact/>} />
-          <Route exact path = '/Resume' element={<Resume/>} />
         </Routes>
 
         {/* Footer Icons */}
