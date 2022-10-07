@@ -2,6 +2,7 @@ import * as React from 'react';
 
 // MUI Imports
 import {
+    Box,
     Container,
     Grid,
     Link,
@@ -26,7 +27,15 @@ export default function Portfolio() {
                         alignItems="center">
 
                     <Grid item md={12} sx={{m: 6}}>
-                        <Typography variant='h2'sx={{m: 8}}>team projects</Typography>
+                        {/* Title */}
+                        <Box
+                        alignItems="center"
+                        justify="center"
+                        sx={{ display: "flex", gap: "10px", m: 2 }}
+                        >
+                            <Typography variant='h2'>collaborations</Typography>
+                            <Typography variant='h1' sx={{color: '#e6af2e', mb: 2}}>...</Typography>
+                        </Box>
                     </Grid>
 
                     {/* TODO: Change image on hover - homepage to login page */}
