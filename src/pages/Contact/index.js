@@ -31,14 +31,14 @@ export default function Contact() {
         {/* Contact Form */}
         <Paper square
         elevation={16}
-        sx={{width: '70%'}}>
+        sx={{width: '70%', borderRadius: 3, p: 5}}>
           <form>
 
-            <TextField label="Full Name" fullWidth autocomplete="none"/>
-            <TextField label="Email" fullWidth autocomplete="none"/>
-            <TextField label="Message" fullWidth multiline rows={5} autocomplete="none"/>
+            <TextField label="Full Name" fullWidth autocomplete="none" sx={{my: 1}}/>
+            <TextField label="Email" fullWidth autocomplete="none" sx={{my: 1}}/>
+            <TextField label="Message" fullWidth multiline rows={5} autocomplete="none" sx={{my: 1}}/>
 
-            <Button type="submit">Submit</Button>
+            <Button type="submit" sx={{m: 4}}>Submit</Button>
 
           </form>
         </Paper>

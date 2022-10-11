@@ -40,6 +40,7 @@ export default function Portfolio() {
 
                     {/* TODO: Change image on hover - homepage to login page */}
                     {/* TODO: Add descriptions/titles */}
+                    {/* TODO: Change image papers to match profile image */}
 
                     <Grid item container md={12}>   
                         <Link underline="none" href='https://myteam-stats.herokuapp.com/' target="_blank">    
