@@ -27,7 +27,7 @@ export default function AboutMe() {
         <Box
           alignItems="center"
           justify="center"
-          sx={{ display: "flex", gap: "25px", m:10 }}
+          sx={{ display: "flex", gap: "25px", m: "auto", pt: 18, pb: 8 }}
         >
           <Typography variant='h2'>christina bohn</Typography>
           <Typography variant='h1' sx={{color: '#e6af2e'}}> | </Typography>
@@ -58,11 +58,11 @@ export default function AboutMe() {
             </Typography>
             
             <Typography sx={{m: 4}}> 
-              Curious and creative software developer, with a certificate in Full Stack Web Development from the University of Washington. Positive and energetic team player, big picture thinker. Comfortable working in the MERN stack.
+              Curious and creative software developer, with a B.S. in Biology from the University of North Dakota and a certificate in Full Stack Web Development from the University of Washington. Positive and energetic team player, big picture thinker. Comfortable working in the MERN stack.
             </Typography>
 
             <Typography sx={{m: 4, pb: 6}}>
-              I enjoy connecting the analytical and problem-solving skills I developed as an environmental scientist with a curiosity for lifelong learning, to write code that creates beautiful, seamless solutions for web users.
+              My background is in Environmental Science, and my passion is in finding smart solutions for modern problems. I enjoy connecting the analytical and problem-solving skills developed as an environmental scientist with a curiosity for lifelong learning, to write code that creates beautiful, seamless solutions for web users.
             </Typography>
           </Paper>
         </Grid>

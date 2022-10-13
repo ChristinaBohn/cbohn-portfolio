@@ -19,7 +19,7 @@ const ResponsiveAppBar = (props) => {
   const {pages=[], currentPage, setCurrentPage} = props;
 
   return (
-    <AppBar position="static" sx={{ bgcolor: '#e6af2e' }} >
+    <AppBar position="fixed" sx={{ bgcolor: '#e6af2e' }} >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography

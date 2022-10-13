@@ -22,7 +22,7 @@ export default function Contact() {
         <Box
           alignItems="center"
           justify="center"
-          sx={{ display: "flex", gap: "10px", m: 10 }}
+          sx={{display: "flex", gap: "10px", m: 10}}
         >
           <Typography variant='h2'>let's get in touch</Typography>
           <Typography variant='h1' sx={{color: '#e6af2e', mb: 2}}>...</Typography>
@@ -31,7 +31,7 @@ export default function Contact() {
         {/* Contact Form */}
         <Paper square
         elevation={16}
-        sx={{width: '70%', borderRadius: 3, p: 5}}>
+        sx={{width: '70%', borderRadius: 3, p: 5, m: 'auto'}}>
           <form>
 
             <TextField label="Full Name" fullWidth autocomplete="none" sx={{my: 1}}/>
