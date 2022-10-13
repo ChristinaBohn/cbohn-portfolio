@@ -21,6 +21,6 @@ This is my personal web page, built using React and MUI Components. It is showca
 
 ## Portfolio Preview
 
-![Portfolio Preview](images/portfolio-preview.png)
+![Portfolio Preview](images/preview-portfolio.png)
 
 Cheers!

@@ -27,7 +27,7 @@ export default function AboutMe() {
         <Box
           alignItems="center"
           justify="center"
-          sx={{ display: "flex", gap: "25px", m: "auto", pt: 18, pb: 8 }}
+          sx={{ display: "flex", gap: "25px", m: "auto", pt: 18, pb: 6 }}
         >
           <Typography variant='h2'>christina bohn</Typography>
           <Typography variant='h1' sx={{color: '#e6af2e'}}> | </Typography>
@@ -66,6 +66,7 @@ export default function AboutMe() {
             </Typography>
           </Paper>
         </Grid>
+
       </Grid>
     </Container>
   );
