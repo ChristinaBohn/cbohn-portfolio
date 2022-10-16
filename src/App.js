@@ -27,6 +27,7 @@ const [currentPage, setCurrentPage] = useState(pages[0])
 
         {/* Pages */}
         <Routes>
+          <Route exact path = '/cbohn-portfolio' element={<AboutMe/>} />
           <Route exact path = '/About' element={<AboutMe/>} />
           <Route exact path = '/Portfolio' element={<Portfolio/>} />
           <Route exact path = '/Contact' element={<Contact/>} />

@@ -10,7 +10,7 @@ import {
 } from '@mui/material';
 
 // Image Imports
-import photo from '../AboutMe/images/cbohn-profile-image.jpeg'
+import photo from '../AboutMe/images/cbohn-beach.jpeg'
 
 
 // Bio and Profile Image
@@ -40,7 +40,7 @@ export default function AboutMe() {
           <Box
             component="img"
             sx={{
-              height: 260,
+              height: 400,
               borderRadius: 3,
               boxShadow: 8
             }}
