@@ -10,9 +10,6 @@ import {
  } from '@mui/material';
 import Typography from '@mui/material/Typography';
 
-// Image Imports
-// import photo from '../pages/Portfolio/images/profpic.jpeg';
-
 
 const ResponsiveAppBar = (props) => {
 
