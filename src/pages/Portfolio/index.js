@@ -31,7 +31,7 @@ export default function Portfolio() {
                         <Box
                         alignItems="center"
                         justify="center"
-                        sx={{display: "flex", gap: "10px", m: 2}}
+                        sx={{display: "flex", gap: "10px", m: 2, pt: 2}}
                         >
                             <Typography variant='h2'>collaborations</Typography>
                             <Typography variant='h1' sx={{color: '#e6af2e', mb: 2}}>...</Typography>

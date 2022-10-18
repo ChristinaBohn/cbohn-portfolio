@@ -32,11 +32,14 @@ export default function Contact() {
         <Paper square
         elevation={16}
         sx={{width: '70%', borderRadius: 3, p: 5, m: 'auto'}}>
-          <form>
+          <form
+            target='_blank'
+            action='https://formsubmit.co/christinajbohn@gmail.com'
+            method='POST'>
 
-            <TextField label="Full Name" fullWidth autocomplete="none" sx={{my: 1}}/>
-            <TextField label="Email" fullWidth autocomplete="none" sx={{my: 1}}/>
-            <TextField label="Message" fullWidth multiline rows={5} autocomplete="none" sx={{my: 1}}/>
+            <TextField input type='text' name='name' required label="Full Name" fullWidth autocomplete="none" sx={{my: 1}}/>
+            <TextField input type='email' name='email' required label="Email" fullWidth autocomplete="none" sx={{my: 1}}/>
+            <TextField input type='text' name='message' required label="Message" fullWidth multiline rows={5} autocomplete="none" sx={{my: 1}}/>
 
             <Button type="submit" sx={{m: 4}}>Submit</Button>
 
