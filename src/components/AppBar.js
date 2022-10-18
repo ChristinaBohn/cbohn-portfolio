@@ -1,48 +1,43 @@
-import * as React from 'react';
+import * as React from "react";
 
 // MUI Imports
-import { 
-  AppBar,
-  Box,
-  Button,
-  Container,
-  Toolbar
- } from '@mui/material';
-import Typography from '@mui/material/Typography';
-
+import { AppBar, Box, Button, Container, Toolbar } from "@mui/material";
+import Typography from "@mui/material/Typography";
 
 const ResponsiveAppBar = (props) => {
-
-  const {pages=[], currentPage, setCurrentPage} = props;
+  const { pages = [], currentPage, setCurrentPage } = props;
 
   return (
-    <AppBar position="fixed" sx={{ bgcolor: '#e6af2e' }} >
+    <AppBar position="fixed" sx={{ bgcolor: "#e6af2e" }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Typography
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, color: '#393E41', display: { xs: 'none', md: 'flex' } }}
+            sx={{
+              mr: 2,
+              color: "#393E41",
+              display: { xs: "none", md: "flex" },
+            }}
           >
             christina bohn
           </Typography>
 
           {/* Navigation Links */}
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                className={`${currentPage === page && 'nav-active'}`}
+                className={`${currentPage === page && "nav-active"}`}
                 key={page}
                 onClick={() => setCurrentPage(page)}
                 href={`/${page}`}
-                sx={{ my: 2, color: '#393e41', display: 'block' }}
+                sx={{ my: 2, color: "#393e41", display: "block" }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-
         </Toolbar>
       </Container>
     </AppBar>
