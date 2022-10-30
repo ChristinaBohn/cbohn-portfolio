@@ -4,7 +4,7 @@ import * as React from "react";
 import { Box, Container, Grid, Link, Paper, Typography } from "@mui/material";
 
 // Image Imports
-import dailyPlanner from "./images/daily-planner.png";
+// import dailyPlanner from "./images/daily-planner.png";
 import dogeared from "./images/dogeared.png";
 import selfExploration from "./images/self-exploration.png";
 import myTeamStats from "./images/myTeamStats.png";
@@ -36,6 +36,7 @@ export default function Portfolio() {
         {/* TODO: Change image on hover - homepage to login page */}
         {/* TODO: Add descriptions/titles */}
         {/* TODO: Add border radius */}
+        {/* TODO: Make project cards DRY - map */}
 
         <Grid item container md={12}>
           <Link
@@ -43,7 +44,7 @@ export default function Portfolio() {
             href="https://myteam-stats.herokuapp.com/"
             target="_blank"
           >
-            <Grid item md={4} xs={12}>
+            <Grid item xs={12}>
               <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
                 <img
                   src={myTeamStats}
@@ -59,7 +60,7 @@ export default function Portfolio() {
             href="https://dogeared-2022.herokuapp.com/login"
             target="_blank"
           >
-            <Grid item md={4} xs={12}>
+            <Grid item xs={12}>
               <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
                 <img src={dogeared} alt="Dogeared preview" height="300px"></img>
               </Paper>
@@ -71,7 +72,7 @@ export default function Portfolio() {
             href="https://mikiwolfe.github.io/30-day-Challenge/"
             target="_blank"
           >
-            <Grid item md={4} xs={12}>
+            <Grid item xs={12}>
               <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
                 <img
                   src={selfExploration}

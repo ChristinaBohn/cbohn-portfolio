@@ -1,6 +1,6 @@
 # christina bohn | web developer
 
-Welcome to my Portfolio Page! It is under construction.
+Welcome to my Portfolio Page!
 
 ## Description
 

@@ -18,29 +18,13 @@ export default function Contact() {
       <Box
         alignItems="center"
         justify="center"
-        sx={{ display: "flex", gap: "10px", mt: 10 }}
+        sx={{ display: "flex", gap: "10px", mt: 10, mb: 4 }}
       >
         <Typography variant="h2">let's get in touch</Typography>
         <Typography variant="h1" sx={{ color: "#e6af2e", mb: 2 }}>
           ...
         </Typography>
       </Box>
-
-
-      {/* Resume Download & Technology Icons */}
-      <Container>
-        <Button
-          variant="outlined"
-          startIcon={<DownloadIcon />}
-          href="https://docs.google.com/document/d/1-Ez6R4vPEDNbmoVxvZX2iN5IfzmdmrrESedbttqQDAw/edit"
-          target="_blank"
-          color="inherit"
-          size="large"
-          sx={{ mt: 2, mb: 6, ml: 10 }}
-        >
-          Resume
-        </Button>
-      </Container>
 
       {/* Contact Form */}
       <Paper

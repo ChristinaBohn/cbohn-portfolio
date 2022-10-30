@@ -1,8 +1,16 @@
 import * as React from "react";
 
 // MUI Imports
-import { AppBar, Box, Button, Container, Toolbar } from "@mui/material";
-import Typography from "@mui/material/Typography";
+import { 
+  AppBar,
+  Box,
+  Button,
+  Container,
+  Toolbar,
+  Typography
+} from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
+
 
 const ResponsiveAppBar = (props) => {
   const { pages = [], currentPage, setCurrentPage } = props;
@@ -38,6 +46,22 @@ const ResponsiveAppBar = (props) => {
               </Button>
             ))}
           </Box>
+
+          {/* Resume Download */}
+          <Box>
+            <Button
+            variant="outlined"
+            startIcon={<DownloadIcon />}
+            href="https://docs.google.com/document/d/1-Ez6R4vPEDNbmoVxvZX2iN5IfzmdmrrESedbttqQDAw/edit"
+            target="_blank"
+            color="inherit"
+            size="large"
+            sx={{ color: "#393e41", mt: 2, mb: 2, ml: 10 }}
+            >
+              Resume
+            </Button>
+          </Box>
+
         </Toolbar>
       </Container>
     </AppBar>
