@@ -31,7 +31,6 @@ export default function AboutMe() {
         </Box>
 
         {/* Profile Image */}
-
         <Grid item xs={12} md={4}>
           <Box
             component="img"
