@@ -34,33 +34,16 @@ export default function Portfolio() {
         </Grid>
 
         {/* TODO: Change image on hover - homepage to login page */}
-        {/* TODO: Add descriptions/titles */}
+        {/* TODO: Mobile responsive */}
         {/* TODO: Add border radius */}
         {/* TODO: Make project cards DRY - put links and descriptions into arrays and map */}
 
         <Grid item container direction="column" justifyContent="center" alignItems="center" md={12} sx={{mb: 15}}>
           
           {/* MyTeam Stats */}
-          <Grid sx={{ display: "flex", gap: "25px", m: "auto" }}>
-          
-            <Container>
-              <Typography variant="h5">
-                MyTeam Stats Tracker
-              </Typography>
-
-              <Typography variant="h7" sx={{m: 1}}>
-              A sports stats tracker app and league management space for players, parents, coaches, and league administrators.
-              </Typography>
-
-              <Typography variant="h7" sx={{m: 1}}>
-              Roles: Wrote and tested mutations and queries, map functions to dynamically render data - connecting back end to front end, design implementation on front end
-              </Typography>
-
-              <Typography variant="h7" sx={{m: 1}}>
-              Tools: HTML, CSS, Javascript, Material UI, React, Express, Nodemon, GraphQL/Apollo, JWT, Bcrypt, Mongo DB
-              </Typography>
-            </Container>
+          <Grid sx={{ display: "flex", m: "auto" }}>
             
+            {/* Project Image Link */}
             <Link
               underline="none"
               href="https://myteam-stats.herokuapp.com/"
@@ -77,44 +60,102 @@ export default function Portfolio() {
               </Grid>
             </Link>
 
+            {/* Description */}
+            <Container sx={{my: "auto"}}>
+              <Typography variant="h5" sx={{mb: 1}}>
+                MyTeam Stats Tracker
+              </Typography>
+
+              <Typography variant="h7">
+                A sports stats tracker app and league management space for players, parents, coaches, and league administrators.
+                <br></br>
+              </Typography>
+
+              <Typography variant="h7">
+                Roles: Wrote and tested mutations and queries, map functions to dynamically render data - connecting back end to front end, design implementation on front end
+              <br></br>
+                Tools: HTML, CSS, Javascript, Material UI, React, Express, Nodemon, GraphQL/Apollo, JWT, Bcrypt, Mongo DB
+              </Typography>
+            </Container>
           </Grid>
 
+          {/* Dogeared */}
+          <Grid sx={{ display: "flex", gap: "8px", m: "auto" }}>
 
+            {/* Project Image Link */}
+            <Link
+              underline="none"
+              href="https://dogeared-2022.herokuapp.com/login"
+              target="_blank"
+            >
+              <Grid item xs={12}>
+                <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
+                  <img src={dogeared} alt="Dogeared preview" height="300px"></img>
+                </Paper>
+              </Grid>
+            </Link>
 
+            {/* Description */}
+            <Container sx={{my: "auto"}}>
+              <Typography variant="h5" sx={{mb: 1}}>
+                Dogeared
+              </Typography>
 
-          <Link
-            underline="none"
-            href="https://dogeared-2022.herokuapp.com/login"
-            target="_blank"
-          >
-            <Grid item xs={12}>
-              <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
-                <img src={dogeared} alt="Dogeared preview" height="300px"></img>
-              </Paper>
-            </Grid>
-          </Link>
+              <Typography variant="h7">
+                A personal, digital library. The user can save books into Have Read and To Be Read lists, add and save notes and favorite quotes.
+                <br></br>
+              </Typography>
 
-          <Link
-            underline="none"
-            href="https://mikiwolfe.github.io/30-day-Challenge/"
-            target="_blank"
-          >
-            <Grid item xs={12}>
-              <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
-                <img
-                  src={selfExploration}
-                  alt="40 Day Challenge preview"
-                  height="300px"
-                ></img>
-              </Paper>
-            </Grid>
-          </Link>
+              <Typography variant="h7">
+                Roles: Design implementation, sorting function in library, add and delete functions on books
+                <br></br>
+                Tools: HTML, CSS, Javascript, Node.js, Express.js, Busboy, Multer, Heroku
+              </Typography>
+            </Container>
+          </Grid> 
+
+          {/* 30-Day Challenge */}
+          <Grid sx={{ display: "flex", gap: "8px", m: "auto" }}>
+            
+            {/* Project Image Link */}
+            <Link
+              underline="none"
+              href="https://mikiwolfe.github.io/30-day-Challenge/"
+              target="_blank"
+            >
+              <Grid item xs={12}>
+                <Paper elevation={16} sx={{ m: 4, height: "300px" }}>
+                  <img
+                    src={selfExploration}
+                    alt="40 Day Challenge preview"
+                    height="300px"
+                  ></img>
+                </Paper>
+              </Grid>
+            </Link>
+
+            {/* Description */}
+            <Container sx={{my: "auto"}}>
+              <Typography variant="h5" sx={{mb: 1}}>
+                30-Day Self Exploration Challenge
+              </Typography>
+
+              <Typography variant="h7">
+                A personal development application with daily challenge suggestions, link to a personality assessment, and a journaling tool.
+                <br></br>
+              </Typography>
+
+              <Typography variant="h7">
+                Roles: Planning, design and functionality of Journal page
+                <br></br>
+                Tools: Bored API, Quotes Free API, Bulma 9.3, HTML, CSS, JavaScript, jQuery, AJAX
+              </Typography>
+            </Container>
+          </Grid>
         </Grid>
       </Grid>
 
-      {/* <br></br>
-
-                TODO: Add personal projects */}
+      {/* TODO: Add personal projects */}
     </Container>
   );
 }
