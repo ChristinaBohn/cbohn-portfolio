@@ -14,6 +14,10 @@ This is my personal web page, built using React and MUI Components. It is showca
     * React.js
     * Material UI
 
+## What I Learned
+
+My biggest takeaway on this project is that good and deployed is better than attempting perfection and never deploying. There may be bugs left to work out or styling to hone, but a finished functional project is the goal of starting - keeping that in sight helps with pushing out the last 10% of work!
+
 ## Links
 
     * GitHub Repo: https://github.com/ChristinaBohn/cbohn-portfolio
