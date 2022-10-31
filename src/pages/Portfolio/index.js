@@ -1,7 +1,14 @@
 import * as React from "react";
 
 // MUI Imports
-import { Box, Container, Grid, Link, Paper, Typography } from "@mui/material";
+import { 
+  Box,
+  Container,
+  Grid,
+  Link,
+  Paper,
+  Typography
+} from "@mui/material";
 
 // Image Imports
 // import dailyPlanner from "./images/daily-planner.png";
@@ -38,6 +45,8 @@ export default function Portfolio() {
         {/* TODO: Add border radius */}
         {/* TODO: Make project cards DRY - put links and descriptions into arrays and map */}
 
+        {/* TODO: Add gitHub links */}
+
         <Grid item container direction="column" justifyContent="center" alignItems="center" md={12} sx={{mb: 15}}>
           
           {/* MyTeam Stats */}
@@ -62,20 +71,34 @@ export default function Portfolio() {
 
             {/* Description */}
             <Container sx={{my: "auto"}}>
-              <Typography variant="h5" sx={{mb: 1}}>
+              <Typography variant="h4" sx={{mb: 1}}>
                 MyTeam Stats Tracker
               </Typography>
 
-              <Typography variant="h7">
-                A sports stats tracker app and league management space for players, parents, coaches, and league administrators.
-                <br></br>
-              </Typography>
+              <Box sx={{maxWidth: "85%"}}>
+                <Typography variant="h7">
+                  A sports stats tracker app and league management space for players, parents, coaches, and league administrators.
+                  <br></br>
+                </Typography>
 
-              <Typography variant="h7">
-                Roles: Wrote and tested mutations and queries, map functions to dynamically render data - connecting back end to front end, design implementation on front end
-              <br></br>
-                Tools: HTML, CSS, Javascript, Material UI, React, Express, Nodemon, GraphQL/Apollo, JWT, Bcrypt, Mongo DB
-              </Typography>
+                <Typography variant="h7">
+                  Roles: Wrote and tested mutations and queries, map functions to dynamically render data - connecting back end to front end, design implementation on front end
+                  <br></br>
+                  Tools: HTML, CSS, Javascript, Material UI, React, Express, Nodemon, GraphQL/Apollo, JWT, Bcrypt, Mongo DB
+                  <br></br>
+                </Typography>
+
+                <Link 
+                  underline="none"
+                  href="https://github.com/thenickedwards/My-Team-Stats-Tracker"
+                  target="_blank"
+                  color="black">
+                  <Typography variant="h8" sx={{ fontWeight: 'bold' }}>
+                    https://github.com/thenickedwards/My-Team-Stats-Tracker
+                  </Typography>
+                </Link>
+              </Box>
+            
             </Container>
           </Grid>
 
@@ -97,7 +120,7 @@ export default function Portfolio() {
 
             {/* Description */}
             <Container sx={{my: "auto"}}>
-              <Typography variant="h5" sx={{mb: 1}}>
+              <Typography variant="h4" sx={{mb: 1}}>
                 Dogeared
               </Typography>
 
@@ -116,7 +139,7 @@ export default function Portfolio() {
 
           {/* 30-Day Challenge */}
           <Grid sx={{ display: "flex", gap: "8px", m: "auto" }}>
-            
+
             {/* Project Image Link */}
             <Link
               underline="none"
@@ -136,7 +159,7 @@ export default function Portfolio() {
 
             {/* Description */}
             <Container sx={{my: "auto"}}>
-              <Typography variant="h5" sx={{mb: 1}}>
+              <Typography variant="h4" sx={{mb: 1}}>
                 30-Day Self Exploration Challenge
               </Typography>
 
