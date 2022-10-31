@@ -9,6 +9,9 @@ import Portfolio from "./pages/Portfolio/index";
 import AboutMe from "./pages/AboutMe";
 import Contact from "./pages/Contact";
 
+// Import Project Information
+import collaborations from './collaborations';
+
 function App() {
   const pages = ["About", "Portfolio", "Contact"];
   const [currentPage, setCurrentPage] = useState(pages[0]);

@@ -16,6 +16,21 @@ import dogeared from "./images/dogeared.png";
 import selfExploration from "./images/self-exploration.png";
 import myTeamStats from "./images/myTeamStats.png";
 
+// MAP TEST - Reference Bootcamp week 20 React, Day 1, Act 9 and Dogeared
+// export default function Portfolio() {
+//   return (
+//     <Container>
+//         {collaborations.map((collaboration) => {
+//           return (
+//             <Typography>
+//               {collaboration.title}
+//             </Typography>
+//           )
+//         }
+//     </Container>
+//   );
+// }
+
 // Project Porfolio
 export default function Portfolio() {
   return (
@@ -43,9 +58,8 @@ export default function Portfolio() {
         {/* TODO: Change image on hover - homepage to login page */}
         {/* TODO: Mobile responsive */}
         {/* TODO: Add border radius */}
-        {/* TODO: Make project cards DRY - put links and descriptions into arrays and map */}
+        {/* TODO: Make project cards DRY - put links and descriptions into object and map */}
 
-        {/* TODO: Add gitHub links */}
 
         <Grid item container direction="column" justifyContent="center" alignItems="center" md={12} sx={{mb: 15}}>
           
@@ -98,7 +112,6 @@ export default function Portfolio() {
                   </Typography>
                 </Link>
               </Box>
-            
             </Container>
           </Grid>
 
@@ -124,16 +137,29 @@ export default function Portfolio() {
                 Dogeared
               </Typography>
 
-              <Typography variant="h7">
-                A personal, digital library. The user can save books into Have Read and To Be Read lists, add and save notes and favorite quotes.
-                <br></br>
-              </Typography>
+              <Box sx={{maxWidth: "85%"}}>
+                <Typography variant="h7">
+                  A personal, digital library. The user can save books into Have Read and To Be Read lists, add and save notes and favorite quotes.
+                  <br></br>
+                </Typography>
 
-              <Typography variant="h7">
-                Roles: Design implementation, sorting function in library, add and delete functions on books
-                <br></br>
-                Tools: HTML, CSS, Javascript, Node.js, Express.js, Busboy, Multer, Heroku
-              </Typography>
+                <Typography variant="h7">
+                  Roles: Design implementation, sorting function in library, add and delete functions on books
+                  <br></br>
+                  Tools: HTML, CSS, Javascript, Node.js, Express.js, Busboy, Multer, Heroku
+                  <br></br>
+                </Typography>
+
+                <Link 
+                  underline="none"
+                  href="https://github.com/thenickedwards/My-Team-Stats-Tracker"
+                  target="_blank"
+                  color="black">
+                  <Typography variant="h8" sx={{ fontWeight: 'bold' }}>
+                    https://github.com/jsamborski310/dogeared                  
+                  </Typography>
+                </Link>
+              </Box>
             </Container>
           </Grid> 
 
@@ -163,16 +189,30 @@ export default function Portfolio() {
                 30-Day Self Exploration Challenge
               </Typography>
 
-              <Typography variant="h7">
-                A personal development application with daily challenge suggestions, link to a personality assessment, and a journaling tool.
-                <br></br>
-              </Typography>
+              <Box sx={{maxWidth: "85%"}}>
+                <Typography variant="h7">
+                  A personal development application with daily challenge suggestions, link to a personality assessment, and a journaling tool.
+                  <br></br>
+                </Typography>
 
-              <Typography variant="h7">
-                Roles: Planning, design and functionality of Journal page
-                <br></br>
-                Tools: Bored API, Quotes Free API, Bulma 9.3, HTML, CSS, JavaScript, jQuery, AJAX
-              </Typography>
+                <Typography variant="h7">
+                  Roles: Planning, design and functionality of Journal page
+                  <br></br>
+                  Tools: Bored API, Quotes Free API, Bulma 9.3, HTML, CSS, JavaScript, jQuery, AJAX
+                  <br></br>
+                </Typography>
+
+                <Link 
+                  underline="none"
+                  href="https://github.com/thenickedwards/My-Team-Stats-Tracker"
+                  target="_blank"
+                  color="black">
+                  <Typography variant="h8" sx={{ fontWeight: 'bold' }}>
+                    https://github.com/kelseybrianne/self-exploration-challenge
+                  </Typography>
+                </Link>
+            </Box>
+
             </Container>
           </Grid>
         </Grid>
