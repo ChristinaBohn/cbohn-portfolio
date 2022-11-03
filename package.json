@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "homepage": "https://ChristinaBohn.github.io/cbohn-portfolio",
+  "proxy": "http://localhost:3000",
   "dependencies": {
     "@emotion/react": "^11.8.2",
     "@emotion/styled": "^11.8.1",
