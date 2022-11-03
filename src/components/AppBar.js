@@ -36,7 +36,7 @@ const ResponsiveAppBar = (props) => {
           <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
             {pages.map((page) => (
               <Button
-                className={`${currentPage === page && "nav-active"}`}
+                // className={`${currentPage === page && "nav-active"}`}
                 key={page}
                 onClick={() => setCurrentPage(page)}
                 href={`/${page}`}
