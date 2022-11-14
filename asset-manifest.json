@@ -1,16 +1,19 @@
 {
   "files": {
-    "main.css": "/cbohn-portfolio/static/css/main.073c9b0a.css",
-    "main.js": "/cbohn-portfolio/static/js/main.5cfb98a2.js",
-    "static/js/787.104e7237.chunk.js": "/cbohn-portfolio/static/js/787.104e7237.chunk.js",
-    "static/media/logo.svg": "/cbohn-portfolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "main.css": "/cbohn-portfolio/static/css/main.8dcd3c24.css",
+    "main.js": "/cbohn-portfolio/static/js/main.5f1a4983.js",
+    "static/js/787.8a9e1f02.chunk.js": "/cbohn-portfolio/static/js/787.8a9e1f02.chunk.js",
+    "static/media/cbohn-beach.jpeg": "/cbohn-portfolio/static/media/cbohn-beach.a094a826ffb78f0e6bc8.jpeg",
+    "static/media/self-exploration.png": "/cbohn-portfolio/static/media/self-exploration.dd009feff2be5f7e561e.png",
+    "static/media/dogeared.png": "/cbohn-portfolio/static/media/dogeared.38460c3f5a184a0bb5ab.png",
+    "static/media/myTeamStats.png": "/cbohn-portfolio/static/media/myTeamStats.07eb813e9e76b4469150.png",
     "index.html": "/cbohn-portfolio/index.html",
-    "main.073c9b0a.css.map": "/cbohn-portfolio/static/css/main.073c9b0a.css.map",
-    "main.5cfb98a2.js.map": "/cbohn-portfolio/static/js/main.5cfb98a2.js.map",
-    "787.104e7237.chunk.js.map": "/cbohn-portfolio/static/js/787.104e7237.chunk.js.map"
+    "main.8dcd3c24.css.map": "/cbohn-portfolio/static/css/main.8dcd3c24.css.map",
+    "main.5f1a4983.js.map": "/cbohn-portfolio/static/js/main.5f1a4983.js.map",
+    "787.8a9e1f02.chunk.js.map": "/cbohn-portfolio/static/js/787.8a9e1f02.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.073c9b0a.css",
-    "static/js/main.5cfb98a2.js"
+    "static/css/main.8dcd3c24.css",
+    "static/js/main.5f1a4983.js"
   ]
 }
