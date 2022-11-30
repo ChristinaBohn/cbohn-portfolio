@@ -27,12 +27,16 @@ function App() {
         />
 
         {/* Pages */}
-        <Routes>
+        {/* <Routes>
           <Route exact path="/cbohn-portfolio" element={<AboutMe />} />
           <Route exact path="/About" element={<AboutMe />} />
           <Route exact path="/Portfolio" element={<Portfolio />} />
           <Route exact path="/Contact" element={<Contact />} />
-        </Routes>
+        </Routes> */}
+
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Link to="/About" element={<AboutMe />} />
+        </BrowserRouter>
 
         {/* Footer Icons */}
         <Footer />
