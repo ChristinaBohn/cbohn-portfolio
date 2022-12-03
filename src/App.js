@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./App.css";
 
 // Import Pages & Components
@@ -27,16 +29,17 @@ function App() {
         />
 
         {/* Pages */}
-        {/* <Routes>
+        <Routes basename={process.env.PUBLIC_URL}>
           <Route exact path="/cbohn-portfolio" element={<AboutMe />} />
           <Route exact path="/About" element={<AboutMe />} />
           <Route exact path="/Portfolio" element={<Portfolio />} />
           <Route exact path="/Contact" element={<Contact />} />
-        </Routes> */}
+        </Routes>
 
-        <BrowserRouter basename={process.env.PUBLIC_URL}>
+        {/* <BrowserRouter basename={process.env.PUBLIC_URL}>
+          <Link to="/cbohn-portfolio" element={<AboutMe />} />
           <Link to="/About" element={<AboutMe />} />
-        </BrowserRouter>
+        </BrowserRouter> */}
 
         {/* Footer Icons */}
         <Footer />
