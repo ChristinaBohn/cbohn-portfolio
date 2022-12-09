@@ -30,10 +30,10 @@ function App() {
 
         {/* Pages */}
         <Routes basename={process.env.PUBLIC_URL}>
-          <Route exact path="/cbohn-portfolio" element={<AboutMe />} />
-          <Route exact path="/About" element={<AboutMe />} />
-          <Route exact path="/Portfolio" element={<Portfolio />} />
-          <Route exact path="/Contact" element={<Contact />} />
+          <Route exact path="https://ChristinaBohn.github.io/cbohn-portfolio/cbohn-portfolio" element={<AboutMe />} />
+          <Route exact path="https://ChristinaBohn.github.io/cbohn-portfolio/About" element={<AboutMe />} />
+          <Route exact path="https://ChristinaBohn.github.io/cbohn-portfolio/Portfolio" element={<Portfolio />} />
+          <Route exact path="https://ChristinaBohn.github.io/cbohn-portfolio/Contact" element={<Contact />} />
         </Routes>
 
         {/* <BrowserRouter basename={process.env.PUBLIC_URL}>
